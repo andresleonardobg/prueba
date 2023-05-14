@@ -1,0 +1,463 @@
+@import url('https://fonts.cdnfonts.com/css/filson-pro');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Wix+Madefor+Display&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #fff;
+}
+
+
+/*redband*/
+.red_band {
+    background-color: #FFDCD3;
+}
+
+.red_band p {
+    padding: 9px 0 7px 0;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #444950;
+}
+
+
+/*header*/
+.decoration_header{
+    width: 70px; 
+    height: 24px;
+    background: #CAF0FF; 
+    border-radius: 100px;
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    z-index: -1;
+}
+
+.header_container{
+    display: flex; 
+    margin: 30px 200px 
+}
+
+.header_container h1 {
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 140%;
+    width: 50%;
+}
+
+.buttons_carousel{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.buttons_carousel_container{
+    display: flex; 
+    gap: 10px;
+}
+
+.button_nav{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 70px; 
+    height: 70px;
+}
+
+.button_nav span{
+    width: 70px; 
+    height: 24px;
+    background: #FFDCD3; 
+    border-radius: 100px; 
+    -webkit-box-shadow: 0px 0px 78px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 78px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 78px -5px rgba(0,0,0,0.75);
+}
+
+.button_nav button{
+    border-radius: 100%; 
+    width: 39.5px; 
+    height: 39.5px;
+    border: 0px; 
+    background-color: #fff;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/*carousel*/
+.carousel-container{
+    width: 100%; 
+    height: 500px;
+    overflow: hidden;
+    width: 1360px;
+}
+
+#carousel {
+    display: flex;
+    transform: translateX(-340px);
+}
+
+.carousel-item{
+    max-width: 320px;
+    margin: 0 10px;;
+}
+
+.carousel-item-image{
+    max-width: 320px;
+    width: 320px;
+    border-radius: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.carousel-item-image button{
+    border-radius: 100px; 
+    width: 300px; 
+    height: 50px; 
+    background: #ffffffcc; 
+    border: none; 
+    margin-bottom: 15px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 170%;
+    color: #EFA693;
+    text-transform: uppercase;
+}
+
+.carousel-item-info{
+    padding-top: 20px;
+}
+
+.carousel-item-info h6{
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 132%;
+}
+
+.carousel-item-stars{
+    display: flex; 
+    justify-content: space-between;
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.carousel-item-stars div{
+    display: flex;
+}
+
+.carousel-item-stars p{
+    color: #939393;
+}
+
+/*stars*/
+.star-icon {
+    color: #ccc;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.star-icon.filled {
+    color: #F7A115;
+}
+
+.old_price{
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 15px;
+    line-height: 180%;
+    color: #939393;
+    text-decoration-line: line-through;
+}
+
+.actually_price{
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 15px;
+    line-height: 180%;
+    color: #444950;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+
+
+
+
+/*all products button*/
+.all_products{
+    text-align: center;
+    margin: 50px auto !important;
+}
+
+
+/*bottom section*/
+.bottom_section{
+    background-image: url( './assets/wave.svg' ); 
+    max-height: 550px; 
+    height: 550px; 
+    margin-top: 50px;
+    text-align: center;
+}
+
+.bottom_section div{
+    padding-top: 200px;
+}
+
+.bottom_section div h2{
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 140%;
+    color: #444950;
+    max-width: 750px;
+    margin: auto;
+}
+
+.bottom_section div p{
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 15px;
+    line-height: 180%;
+    color: #939393;
+    max-width: 450px;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+.bottom_section form input{
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #EFA693;
+    border-radius: 100px;
+    font-family: 'Filson Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 180%;
+    color: #939393;
+    padding: 5px 20px;
+    max-width: 360px;
+    width: 360px;
+}
+
+
+/*generales*/
+.max_width{
+    max-width: 1440px; 
+    margin: auto;
+}
+
+.buttons{
+    box-sizing: border-box;
+    background: #EFA693;
+    border: 1px solid #EFA693;
+    border-radius: 100px;
+    opacity: 0.9;
+    color: #fff;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 170%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 30px;
+    cursor: pointer;
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+    /* header */
+    .header_container{
+        display: block; 
+        margin: 30px 30px 20px 30px;
+    }
+
+    .decoration_header{
+        top: 80px;
+        left: 20px;
+    }
+
+    .header_container h1{
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .buttons_carousel{
+        justify-content: left;
+    }
+
+    /* carousel */
+
+    #carousel{
+        transform: translateX(-270px);
+    }
+
+    .carousel-container{
+        height: 350px;
+        width: 270px;
+        overflow: visible;
+    }
+
+    .carousel-item-image{
+        width: 250px;
+        height: 250px !important;
+    }
+
+    .carousel-item-stars{
+        display: block;
+    }
+
+    .carousel-item-image button{
+        width: 220px;
+    }
+
+    .carousel-item-info{
+        padding-top: 10px;
+    }
+
+    .carousel-item-stars{
+        line-height: 180%;;
+    }
+
+    /* all products */
+    .buttons{
+        font-size: 12px;
+        width: 230px;
+        height: 45px;
+    }
+
+    /*bottom section*/
+    .bottom_section{
+        background-position: 1350px 0px;;
+    }
+
+    .bottom_section div{
+        padding-top: 150px;
+    }
+
+    .bottom_section div h2{
+        font-size: 28px;
+        width: 350px;
+    }
+
+    .bottom_section div p{
+        font-size: 15px;
+        width: 320px;
+        padding-bottom: 20px;
+    }
+
+    .bottom_section form input{
+        padding: 10px 20px;
+        margin-bottom: 10px;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px){
+    /* header */
+    .header_container{
+        margin: 30px 30px 20px 30px;
+    }
+
+    .decoration_header{
+        top: 90px;
+        left: 20px;
+    }
+
+    .header_container h1{
+        font-size: 38px;
+    }
+
+    #carousel {
+        transform: translateX(-240px);
+    }
+
+    .carousel-container{
+        width: 720px;
+        height: 350px;
+    }
+
+    .carousel-item-image{
+        width: 220px;
+        height: 220px !important;
+        margin: 0px;
+    }
+    
+    .carousel-item-image button{
+        width: 200px;
+        height: 35px;
+    }
+    
+    .carousel-item-stars{
+        display: block;
+    }
+
+}
+
+/* desktop */
+@media (min-width: 1024px) and (max-width: 1279px){
+    /* header */
+    .header_container{
+        margin: 30px 30px 20px 30px;
+    }
+
+    .decoration_header{
+        top: 90px;
+        left: 20px;
+    }
+
+    .header_container h1{
+        font-size: 38px;
+    }
+
+}
+
+@media (min-width: 1280px) and (max-width: 1439px){
+    .decoration_header{
+        top: 90px;
+        left: 180px;
+    }
+
+    .carousel-container{
+        width: 1020px;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1441px){
+    .decoration_header{
+        top: 90px;
+        left: 180px;
+    }
+}
