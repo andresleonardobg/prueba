@@ -75,8 +75,6 @@ let can_move_carousel = true
 const mobile = window.matchMedia("(min-width: 320px) and (max-width: 480px)")
 const tablet = window.matchMedia("(min-width: 768px) and (max-width: 1023px)")
 
-//listo
-
 buttonLeft.addEventListener("click", () => {
     if(can_move_carousel){
         can_move_carousel = false
