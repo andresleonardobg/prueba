@@ -3,6 +3,11 @@ const carousel = document.querySelector('#carousel');
 const buttonLeft = document.querySelector('#carousel_left')
 const buttonRight = document.querySelector('#carousel_right')
 
+// email
+const emailForm = document.querySelector('#emailForm');
+const emailInput = document.querySelector('#emailInput');
+const validationMessage = document.querySelector('#validationMessage');
+
 const carouselProducts = {
     async getProducts(urlApi, container) {
         try {
@@ -128,6 +133,26 @@ const carouselManager = {
     });
   }
 };
+
+
+emailForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const email = emailInput.value.trim();
+
+  if (validateEmail(email)) {
+    validationMessage.textContent = 'Correo válido.';
+    validationMessage.style.color = 'green';
+  } else {
+    validationMessage.textContent = 'Correo inválido. Por favor, ingrese un correo electrónico válido.';
+    validationMessage.style.color = 'red';
+  }
+});
+
+function validateEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
 
 carouselProducts.getProducts(api, carousel)
 carouselManager.init(buttonLeft, buttonRight, carousel);
