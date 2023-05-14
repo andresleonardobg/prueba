@@ -2,7 +2,7 @@
 
 ![example](https://raw.githubusercontent.com/andresleonardobg/prueba/main/assets/preview.png)
 
-En este repositorio podra ver el codigo creado para la prueba que se me ha asignado igualmente podran ver este mismo proyecto desplegado en un hosting de firebase que podran ver [aquí](http://www.limni.net).
+En este repositorio podra ver el codigo creado para la prueba que se me ha asignado igualmente podran ver este mismo proyecto desplegado en un hosting de firebase que podran ver [aquí](https://prueba-e876d.web.app/).
 
 ## Funcionamiento
 
