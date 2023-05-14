@@ -222,7 +222,7 @@ html,body{
 
 
 /*bottom section*/
-.bottom_section{
+.footer_section{
     background-image: url( './assets/wave.svg' ); 
     max-height: 550px; 
     height: 550px; 
@@ -230,11 +230,49 @@ html,body{
     text-align: center;
 }
 
-.bottom_section div{
+.footer_section .info{
     padding-top: 200px;
+    z-index: 1;
 }
 
-.bottom_section div h2{
+.footer_images{
+    position: absolute; 
+    overflow: hidden; 
+    height: 550px;
+    width: 100%;
+}
+
+.footer_images img{
+    position: relative;
+}
+
+#image_footer_one{
+    top: 40px;
+    left: -350px;
+}
+
+#image_footer_two{
+    top: 80px;
+    left: -230px;
+}
+
+#image_footer_three{
+    top: 300px;
+    left: -540px;
+}
+
+#image_footer_four{
+    top: 100px;
+    left: 530px;
+}
+
+
+#image_footer_five{
+    top: 250px;
+    left: 300px;
+}
+
+.footer_section div h2{
     font-family: 'Abhaya Libre';
     font-style: normal;
     font-weight: 700;
@@ -245,7 +283,7 @@ html,body{
     margin: auto;
 }
 
-.bottom_section div p{
+.footer_section div p{
     font-family: 'Filson Pro';
     font-style: normal;
     font-weight: 350;
@@ -257,7 +295,7 @@ html,body{
     padding: 30px 0px;
 }
 
-.bottom_section form input{
+.footer_section form input{
     box-sizing: border-box;
     background: #FFFFFF;
     border: 1px solid #EFA693;
@@ -361,28 +399,65 @@ html,body{
     }
 
     /*bottom section*/
-    .bottom_section{
+    .footer_section{
         background-position: 1350px 0px;;
     }
 
-    .bottom_section div{
+    .footer_section div{
         padding-top: 150px;
     }
 
-    .bottom_section div h2{
+    .footer_section div h2{
         font-size: 28px;
         width: 350px;
     }
 
-    .bottom_section div p{
+    .footer_section div p{
         font-size: 15px;
         width: 320px;
         padding-bottom: 20px;
     }
 
-    .bottom_section form input{
+    .footer_section form input{
         padding: 10px 20px;
         margin-bottom: 10px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .footer_section div{
+        padding: 0;
+    }
+
+    #image_footer_one{
+        top: 60px;
+        left: -50px;
+        width: 50px;
+    }
+    
+    #image_footer_two{
+        top: 100px;
+        left: 20px;
+        width: 40px;
+    }
+    
+    #image_footer_three{
+        top: 220px;
+        left: -160px;
+        width: 80px;
+    }
+    
+    #image_footer_four{
+        top: 200px;
+        left: 90px;
+        width: 50px;
+    }
+    
+    
+    #image_footer_five{
+        top: 310px;
+        left: -50px;
+        width: 40px;
     }
 }
 
@@ -424,6 +499,32 @@ html,body{
     
     .carousel-item-stars{
         display: block;
+    }
+
+    #image_footer_one{
+        top: 40px;
+        left: -180px;
+    }
+    
+    #image_footer_two{
+        top: 80px;
+        left: -180px;
+    }
+    
+    #image_footer_three{
+        top: 300px;
+        left: -280px;
+    }
+    
+    #image_footer_four{
+        top: 100px;
+        left: 200px;
+    }
+    
+    
+    #image_footer_five{
+        top: 250px;
+        left: 100px;
     }
 
 }
